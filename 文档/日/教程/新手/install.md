@@ -203,7 +203,7 @@ make                  # 查看make帮助
 
 编译需要很长时间, 因此可以使用`make <machine> -j N`来并行编译. 同时, 安装[ccache](https://ccache.dev/)可以在,例如代码开发重复编译时节省时间.
 
-在第一遍编译完之后, 任何时候重新编辑了LAMMPS代码, 增添或删除文件, 都需要重新编译和重新链接LAMMPS可执行文件到同样的`make <machine>`命令上. `makefile`的追踪只保证那些需要重新编译的文件呗重新编译, 因此如果你改动了`makefile`, 你需要重新编译整个包. 清空环境需要用`make clean-<machine>`. 
+在第一遍编译完之后, 任何时候重新编辑了LAMMPS代码, 增添或删除文件, 都需要重新编译和重新链接LAMMPS可执行文件到同样的`make <machine>`命令上. `makefile`的追踪只保证那些需要重新编译的文件被重新编译, 因此如果你改动了`makefile`, 你需要重新编译整个包. 清空环境需要用`make clean-<machine>`. 
 
 ::: tip
 
